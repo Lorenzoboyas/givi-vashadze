@@ -1,0 +1,37 @@
+{
+    margi
+    padding
+    left
+}
+p{
+padding: 14px;
+background-color: aliceblue;
+margin: 20px;
+position: relative;
+}
+main p:first-child{
+    background-color: black;
+}
+main p:last-child{
+    background-color: azure;
+}
+main p:nth-child(5){
+    background-color: aqua;
+}
+
+main p:nth-child(odd){
+    background-color: blueviolet;
+}
+main p::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+main p::after{
+    content: "?";
+}
